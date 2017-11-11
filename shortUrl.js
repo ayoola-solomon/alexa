@@ -10,7 +10,6 @@ const constructUrl = (amount, initialPayment = 0, duration = 84)  =>
   `${urlPrefix}?route=v1&clear&success=undefined&amount=${amount}&initialPayment=${initialPayment}&duration=${duration}`;
 
 const getShortenedUrl = (data) => {
-  console.log(data);
   const longUrl = constructUrl(data.amount);
   const body = { longUrl };
 
